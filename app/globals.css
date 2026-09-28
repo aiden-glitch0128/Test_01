@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root { --cream: #f8f6f0; --ink: #26332d; --forest: #315c49; --orange: #e87843; }
+* { box-sizing: border-box; }
+html { background: var(--cream); }
+body { margin: 0; color: var(--ink); background: var(--cream); font-family: Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+button, input, textarea { font: inherit; }
+button, a, label { -webkit-tap-highlight-color: transparent; }
+.safe-bottom { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+.bottom-safe { padding-bottom: max(.75rem, env(safe-area-inset-bottom)); }
+.card-shadow { box-shadow: 0 10px 30px rgba(43, 55, 48, .07); }
+.no-scrollbar::-webkit-scrollbar { display: none; }
